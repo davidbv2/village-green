@@ -5,6 +5,8 @@ use Yii;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\models\UploadForm;
+use yii\web\UploadedFile;
 use common\models\LoginForm;
 
 /**
@@ -84,6 +86,8 @@ class SiteController extends Controller
             ]);
         }
     }
+
+   
 
     /**
      * Logout action.
